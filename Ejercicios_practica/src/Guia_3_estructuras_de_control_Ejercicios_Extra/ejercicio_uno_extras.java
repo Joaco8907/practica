@@ -14,7 +14,7 @@ public class ejercicio_uno_extras {
         System.out.println("Ingrese la cantidad de minutos a calcular: ");
         int minutos = entrada.nextInt();
         
-        
+       
         
         if (minutos % 1440 == 0){
             int dias = Math.round(minutos / 1440);
@@ -23,6 +23,10 @@ public class ejercicio_uno_extras {
             int dias = Math.round(minutos / 1440);
             int horas = Math.round((minutos % 1440)/60);
             System.out.println("Los minutos ingresados equivalen a : " + dias + " dias, " + horas + " Horas");
+        }else if (minutos % 1440>0 && (minutos %1440)%60 > 0){
+            int dias =Math.round(minutos/1440);
+            int horas = Math.round((minutos%1440)/60);
+            minutos = minutos - (1440*dias)-(60*horas);
         }else if (minutos %1440<0 && (minutos %1440)%60 > 0){
             int horas = Math.round((minutos % 1440)/60 );
             minutos = minutos-(horas*60);
@@ -30,6 +34,7 @@ public class ejercicio_uno_extras {
         }else{
             System.out.println("la cantidad de minutos ingresados quivalen a " + minutos);
         }
-    }
+    
+   }
     
 }
