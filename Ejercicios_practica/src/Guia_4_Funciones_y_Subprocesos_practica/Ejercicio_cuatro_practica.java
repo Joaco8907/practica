@@ -1,3 +1,5 @@
+package Guia_4_Funciones_y_Subprocesos_practica;
+
 import java.util.Scanner;
 
 /*
@@ -6,7 +8,7 @@ con una función se lo pasamos por parámetro para que nos indique si es o no
 un número primo,
 debe devolver true si es primo, sino false.
  */
-public class NewClass2 {
+public class Ejercicio_cuatro_practica {
         public static void main(String[] args) {
         Scanner Leer=new Scanner(System.in);
         boolean comp=true;
