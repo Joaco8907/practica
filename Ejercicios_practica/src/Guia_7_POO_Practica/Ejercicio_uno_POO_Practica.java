@@ -4,7 +4,7 @@
  */
 package Guia_7_POO_Practica;
 
-import Atributos_Libro.Libro;
+import Atributos_libros.Libro;
 import java.util.Scanner;
 
 /**
